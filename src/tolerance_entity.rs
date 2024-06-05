@@ -1,6 +1,6 @@
 use crate::accuracy::Accuracy;
-use crate::toleranceField::ToleranceField;
-use crate::toleranceValue::ToleranceValue;
+use crate::tolerance_field::ToleranceField;
+use crate::tolerance_value::ToleranceValue;
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 struct ToleranceEntity {

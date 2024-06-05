@@ -1,3 +1,4 @@
+#[derive(Clone, Debug, Eq, Hash, PartialEq)]
 enum TolShaft {
     b,
     c,
@@ -19,6 +20,7 @@ enum TolShaft {
     z,
 }
 
+#[derive(Clone, Debug, Eq, Hash, PartialEq)]
 enum TolHole {
     A,
     B,
@@ -37,4 +39,10 @@ enum TolHole {
     S,
     T,
     U,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+pub enum ToleranceField {
+    Shaft(TolShaft),
+    Hole(TolHole),
 }

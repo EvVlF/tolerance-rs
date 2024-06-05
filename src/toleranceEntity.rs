@@ -1,7 +1,8 @@
 use crate::accuracy::Accuracy;
+use crate::toleranceField::ToleranceField;
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
-struct ToleranceClass {
+struct ToleranceEntity {
     field: ToleranceField,
     grade: Accuracy,
 }

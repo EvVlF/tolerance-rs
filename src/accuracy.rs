@@ -1,4 +1,5 @@
-enum Accuracy {
+#[derive(Clone, Debug, Eq, Hash, PartialEq)]
+pub enum Accuracy {
     Class4,
     Class5,
     Class6,

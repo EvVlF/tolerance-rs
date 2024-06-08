@@ -16,7 +16,7 @@ pub enum Accuracy {
 }
 
 impl Accuracy {
-    fn from_u8(value: u8) -> Option<Self> {
+    fn match_accuracy(value: u8) -> Option<Self> {
         match value {
             4 => Some(Accuracy::Class4),
             5 => Some(Accuracy::Class5),

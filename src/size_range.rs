@@ -1,5 +1,5 @@
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
 pub struct SizeRange {
-    min: u32,
-    max: u32,
+    pub(crate) min: u32,
+    pub(crate) max: u32,
 }

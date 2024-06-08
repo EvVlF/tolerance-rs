@@ -3,7 +3,7 @@ use crate::tolerance_field::ToleranceField;
 use crate::tolerance_value::ToleranceValue;
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
-struct ToleranceEntity {
+pub struct ToleranceEntity {
     field: ToleranceField,
     grade: Accuracy,
     value: ToleranceValue,

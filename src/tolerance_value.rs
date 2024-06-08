@@ -1,5 +1,5 @@
 #[derive(Debug, Clone, Eq, Hash, PartialEq)]
 pub struct ToleranceValue {
-    upper: i32,
-    lower: i32,
+    pub(crate) upper: i32,
+    pub(crate) lower: i32,
 }

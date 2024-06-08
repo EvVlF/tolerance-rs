@@ -1,5 +1,5 @@
 #[derive(Clone, Debug, Eq, Hash, PartialEq)]
-enum TolShaft {
+pub enum TolShaft {
     b,
     c,
     d,
@@ -21,7 +21,7 @@ enum TolShaft {
 }
 
 #[derive(Clone, Debug, Eq, Hash, PartialEq)]
-enum TolHole {
+pub enum TolHole {
     A,
     B,
     C,

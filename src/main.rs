@@ -18,7 +18,9 @@ mod tolerance_value;
 type SizeToleranceAccuracy = (SizeRange, ToleranceAccuracy);
 type ToleranceTable = HashMap<SizeToleranceAccuracy, ToleranceValue>;
 
-static TOLERANCE_TABLE: ToleranceTable = initialize_tolerance_table();
+lazy_static! {
+static ref TOLERANCE_TABLE: ToleranceTable = initialize_tolerance_table();
+    }
 
 fn main() {
     println!("Hello, world!");

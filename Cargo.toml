@@ -6,3 +6,5 @@ edition = "2021"
 [dependencies]
 rust_decimal = "1.*"
 rust_decimal_macros = "1.*"
+lazy_static = "1.*"
+regex = "1.*"

@@ -1,5 +1,7 @@
-#[derive(Debug, Clone, PartialEq, Eq, Hash)]
+use rust_decimal::Decimal;
+
+#[derive(Debug, Copy, Clone, PartialEq, Eq, Hash)]
 pub struct SizeRange {
-    pub(crate) min: u16,
-    pub(crate) max: u16,
+    pub(crate) min: Decimal,
+    pub(crate) max: Decimal,
 }

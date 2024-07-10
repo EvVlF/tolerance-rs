@@ -9,3 +9,5 @@ rust_decimal_macros = "1.*"
 lazy_static = "1.*"
 regex = "1.*"
 rusqlite = { version = "0.*", features = ["bundled"] }
+r2d2 = "0.8.*"
+r2d2_sqlite = "0.24.0"

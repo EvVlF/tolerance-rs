@@ -1,9 +1,9 @@
 use std::fs;
 use std::io::Read;
 use std::path::Path;
+
 use r2d2::Pool;
 use r2d2_sqlite::SqliteConnectionManager;
-
 
 pub struct ToleranceTable {
     pub pool: Pool<SqliteConnectionManager>,
@@ -11,7 +11,9 @@ pub struct ToleranceTable {
 
 impl ToleranceTable {
     pub fn new() -> Self {
-        ToleranceTable { pool: Self::init_pool() }
+        ToleranceTable {
+            pool: Self::init_pool(),
+        }
     }
 }
 

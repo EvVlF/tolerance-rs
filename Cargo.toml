@@ -9,6 +9,16 @@ rust_decimal_macros = "1.*"
 lazy_static = "1.*"
 regex = "1.*"
 rusqlite = { version = "0.*", features = ["bundled"] }
-r2d2 = "0.8.*"
-r2d2_sqlite = "0.24.0"
+r2d2 = "0.*"
+r2d2_sqlite = "0.*"
 rayon = "1.*"
+comfy-table = "7.*"
+
+[build]
+rustflags = ["-C", "link-arg=-fuse-ld=lld"]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+debug = false
